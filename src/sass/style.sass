@@ -1,9 +1,14 @@
 $colorBlue: #1EACC7
+$colorRed: #FF5656
 
 *
   font-family: 'Roboto', sans-serif
   margin: 0
   padding: 0
+
+body
+  max-width: 1922px
+  margin: 0 auto
 
 header
   position: relative
@@ -256,21 +261,79 @@ nav
     text-align: center
 
 .conditions
-  .label
-    margin-top: 68px
-  .title
-    margin-top: 27px
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
   &_subheader
     font-weight: 400
     font-size: 22px
     line-height: 24px
     color: $colorBlue
   &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 20px
+    li
+      position: relative
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      margin-bottom: 10px
+      &::before
+        vertical-align: middle
+        content: ''
+        display: block
+        position: absolute
+        top: 2px
+        left: -32px
+        width: 21px
+        height: 20px
+        background: url('../icons/check/check_blue.svg') center (center / cover) no-repeat
+
+  &__description
+    margin-top: 25px
     font-weight: 300
     font-size: 17px
     line-height: 24px
-    text-indent: 50px
-    color: #222222
+    color: $colorBlue
 
-    list-style-type: none
-    text-indent: 0
+  .warning 
+    .conditions_subheader
+      color: $colorRed
+    .conditions_list
+      li
+        &::before
+          background: url('../icons/check/check_red.svg') center (center / cover) no-repeat
+
+.word
+  padding: 50px 0
+  background: url('../img/bg/world_bg.png') center center / cover no-repeat
+  .label
+    background: #fff
+    color: #000
+  .title
+    color: #fff
+    margin-top: 27px
+  .subtitle
+    margin-top: 0px
+    color: #fff
+    font-weight: 400
+    font-size: 17px
+    text-align: center
+  .all_city
+    display: block
+    text-align: center
+    margin-top: 455px
+    text-decoration: none
+    color: $colorBlue
+    text-transform: uppercase
+
+footer
+  display: flex
+  justify-content: space-around
+  &__social
+    &_fb &_twitter &_ln &_insta
+      width: 35px
+      height: 35px

@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body {
+  max-width: 1922px;
+  margin: 0 auto;
+}
+
 header {
   position: relative;
 }
@@ -341,11 +346,14 @@ nav {
   text-align: center;
 }
 
-.conditions .label {
-  margin-top: 68px;
+.conditions {
+  padding: 68px 0 84px 0;
 }
-.conditions .title {
-  margin-top: 27px;
+.conditions_block {
+  margin: 33px 0;
+}
+.conditions_block_nmb {
+  margin-bottom: 0px;
 }
 .conditions_subheader {
   font-weight: 400;
@@ -354,11 +362,78 @@ nav {
   color: #1EACC7;
 }
 .conditions_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+.conditions_list li {
+  position: relative;
   font-weight: 300;
   font-size: 17px;
   line-height: 24px;
-  text-indent: 50px;
-  color: #222222;
-  list-style-type: none;
-  text-indent: 0;
+  margin-bottom: 10px;
+}
+.conditions_list li::before {
+  vertical-align: middle;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -32px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check/check_blue.svg") center center/cover no-repeat;
+}
+.conditions__description {
+  margin-top: 25px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #1EACC7;
+}
+.conditions .warning .conditions_subheader {
+  color: #FF5656;
+}
+.conditions .warning .conditions_list li::before {
+  background: url("../icons/check/check_red.svg") center center/cover no-repeat;
+}
+
+.word {
+  padding: 50px 0;
+  background: url("../img/bg/world_bg.png") center center/cover no-repeat;
+}
+.word .label {
+  background: #fff;
+  color: #000;
+}
+.word .title {
+  color: #fff;
+  margin-top: 27px;
+}
+.word .subtitle {
+  margin-top: 0px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+.word .all_city {
+  display: block;
+  text-align: center;
+  margin-top: 455px;
+  text-decoration: none;
+  color: #1EACC7;
+  text-transform: uppercase;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer__social_fb footer__social_twitter footer__social_ln footer__social_insta {
+  width: 35px;
+  height: 35px;
 }
