@@ -351,14 +351,25 @@ nav {
   font-weight: 400;
   font-size: 22px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1EACC7;
 }
 .conditions_list {
+  font-style: normal;
   font-weight: 300;
   font-size: 17px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-indent: 50px;
   color: #222222;
-  list-style-type: none;
-  text-indent: 0;
 }
