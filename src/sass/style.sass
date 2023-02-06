@@ -331,9 +331,63 @@ nav
     text-transform: uppercase
 
 footer
-  display: flex
-  justify-content: space-around
-  &__social
-    &_fb &_twitter &_ln &_insta
-      width: 35px
-      height: 35px
+  padding: 14px 23px 39px 23px
+  a
+    text-decoration: none
+
+.footer
+  &_divider
+    margin: 0 auto
+    margin-top: 12px
+    width: 300px
+    height: 7px
+    background-color: $colorBlue
+  &_wrapper 
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &_wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+      
+  &_social
+    & .ico_soc
+      width: 32px
+      height: 32px
+      margin-right: 6px
+  &_links
+    width: 390px
+    margin: 0 auto
+    &_menu 
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+        color: #070716
+    &_submenu 
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        color: #999999
+  &_lang 
+    display: block
+    margin: 0 auto
+    margin-top: 19px
+    text-align: center
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    color: $colorBlue
+  &_mobile_app
+    gap: 7px
+    
