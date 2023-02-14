@@ -17,7 +17,7 @@ nav
 
 .menu_item
   border-right: 2px dotted white
-  padding-right: 28px
+  padding-right: 48px
   &:last-child
       border-right: none
       padding-right: 0
@@ -31,50 +31,53 @@ nav
     align-items: center
 
 .subheader
-    position: absolute
-    top: 50px
-    width: 100%
-    height: 84px
-    background: #000000
-    &_logo
-      max-width: 100%
-      display: block
-      margin-top: 20px
-    &_official
-      opacity: .5
-      font-size: 13px
-      color: #FFFFFF
-      margin-top: 6px
-    &_call
-      margin-top: 24px
-      font-weight: 300
-      font-size: 12px
-      line-height: 14px
-      text-align: right
-      color: #FFFFFF
-    &_number
-      display: block
-      font-weight: 400
-      font-size: 22px
-      text-align: right
-      text-transform: uppercase
-      color: #FFFFFF
-    &_btn
-      margin: 23px 0
-      width: 172px
-      height: 46px
-      background: linear-gradient(0deg, $colorBlue 0%, #4CE2FF 100%)
-      box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.12)
-      border-radius: 4px
-      border: none
+  position: absolute
+  top: 50px
+  width: 100%
+  height: 84px
+  background: #000000
+  &_logo
+    max-width: 100%
+    display: block
+    margin-top: 20px
+  &_official
+    opacity: .5
+    font-size: 13px
+    color: #FFFFFF
+    margin-top: 6px
+  &_call
+    margin-top: 24px
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: right
+    color: #FFFFFF
+  &_number
+    display: block
+    font-weight: 400
+    font-size: 22px
+    text-align: right
+    text-transform: uppercase
+    color: #FFFFFF
+  &_btn
+    margin: 23px 0
+    width: 172px
+    height: 46px
+    background: linear-gradient(0deg, $colorBlue 0%, #4CE2FF 100%)
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: none
 
-      font-weight: 400
-      font-size: 14px
-      text-align: center
-      text-transform: uppercase
-      color: #FFFFFF
+    font-weight: 400
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+
+    +btn_hover
 
 .promo
+  min-height: 800px
   background: url('../img/bg/header_bg.jpg') center center/cover no-repeat
   padding: 155px 0 185px 0
   &_header 
@@ -115,6 +118,10 @@ nav
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    cursor: pointer
+
+    +btn_hover
+
 
 .label
   display: block
@@ -296,6 +303,8 @@ nav
           background: url('../icons/check/check_red.svg') center (center / cover) no-repeat
 
 .word
+  position: relative
+  min-height: 717px
   padding: 50px 0
   background: url('../img/bg/world_bg.png') center center / cover no-repeat
   .label
