@@ -1,33 +1,47 @@
 @media (max-width: 1400px)
   .menu
     &_item
-      padding-right: 30px
-
-
+      padding-right: 32px
 @media (max-width: 1200px)
-  
   .menu
     &_item
       padding-right: 21px
     &_link
       font-size: 13px
-
   .promo
     min-height: 750px
-    padding-bottom: 100px
+    padding-bottom: 200px
     &_header
       font-size: 45px
     &_subheader 
       font-size: 30px
     &_descr
       font-size: 16px
-
   .reason
     &_descr
       width: 300px
     &_item
       align-items: start
+  .mobile 
+    &_item
+      width: 300px
 
+  .footer
+    &_wrapper
+      flex-wrap: wrap
+    &_order1
+      order: 1
+    &_order2
+      order: 2
+    &_order3
+      order: 3
+    &_wrapper > div
+      width: 100%
+      display: flex
+      justify-content: center
+      margin-top: 15px
+      &:nth-child(3)
+        justify-content: center
 
 @media (max-width: 991px)
   .title
@@ -56,7 +70,6 @@
       font-size: 25px
     &_descr
       font-size: 13px
-
   .reason
     &_descr
       width: 300px
@@ -65,7 +78,85 @@
       align-items: center
       &_title
         margin-top: 20px
+  .choice
+    &_promo
+      margin: 475px 0 0 0
+  .mobile 
+    &_item
+      width: 200px
+      height: 175px
+      &_subtitle
+        font-size: 16px
+  .footer
+    &_wrapper
+      flex-wrap: wrap
+    &_order1
+      order: 1
+    &_order2
+      order: 2
+    &_order3
+      order: 3
+    &_wrapper > div
+      width: 100%
+      display: flex
+      justify-content: center
+      margin-top: 15px
+      &:nth-child(3)
+        justify-content: center
 
 @media (max-width: 767px)
   .menu
-    display: none
+    position: fixed
+    flex-direction: column
+    width: 50%
+    height: 100vh
+    left: -100%
+    top: 0
+    transition: .5s all
+    padding: 10px 40px
+    background-color: rgba(0, 0, 0, 0.9)
+    justify-content: center
+    align-items: center
+    &_active
+      left: 0
+    &_item 
+      padding-right: 0
+      border: none
+      margin: 10px 0px
+      a
+        font-size: 16px
+
+  .mobile 
+    &_item
+      width: 200px
+      height: 175px
+      &_subtitle
+        font-size: 12px
+
+  .hamburger
+    display: block
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 40px
+    width: 26px
+    height: 15px
+    z-index: 2
+    align-items: center
+    span
+      display: block
+      margin-bottom: 4px
+      border: 1px solid #fff
+      width: 100%
+      transition: .5s all
+      &:last-child
+        margin-bottom: 0
+    &_active
+      span
+        margin-bottom: -4px
+        &:first-child
+          transform: translateY(2px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:last-child
+          transform: translateY(4px) rotate(45deg)

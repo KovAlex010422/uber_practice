@@ -3,26 +3,25 @@ header
   height: 50px
 nav 
   position: fixed
-  width: 100%
+  width: 100vw
   height: 50px
   background-color: #212121
   z-index: 2
 
 .menu
-    display: flex
-    margin: 0
-    padding: 13px 70px
-    justify-content: space-between
-    list-style-type: none
+  display: flex
+  margin: 0
+  padding: 13px 70px
+  justify-content: space-between
+  list-style-type: none
 
-.menu_item
-  border-right: 2px dotted white
-  padding-right: 48px
-  &:last-child
+  &_item
+    border-right: 2px dotted white
+    padding-right: 48px
+    &:last-child
       border-right: none
-      padding-right: 0
-  
-.menu_link
+      padding-right: 30
+  &_link
     text-decoration: none
     font-weight: 300
     font-size: 15px
@@ -75,7 +74,8 @@ nav
     color: #FFFFFF
 
     +btn_hover
-
+.hamburger
+  display: none
 .promo
   min-height: 800px
   background: url('../img/bg/header_bg.jpg') center center/cover no-repeat
@@ -231,8 +231,8 @@ nav
 .choice
   margin: 0 auto
   height: auto
-  max-width: 1920px
-  background: url('../img/bg/auto.png') center 235px/auto no-repeat, url('../img/bg/choice.jpg') center 500px/contain no-repeat, #070716
+  max-width: 100vw
+  background: url('../img/bg/auto.png') center 235px/auto no-repeat, url('../img/bg/choice.jpg') center 500px/cover no-repeat, #070716
   &_bg
     padding-top: 57px
   &_promo
@@ -303,6 +303,7 @@ nav
           background: url('../icons/check/check_red.svg') center (center / cover) no-repeat
 
 .word
+  width: 100vw
   position: relative
   min-height: 717px
   padding: 50px 0
